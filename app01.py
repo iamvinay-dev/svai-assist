@@ -10,10 +10,10 @@ app = Flask(__name__)
 # ================================================================
 # ENVIRONMENT VARIABLES
 # ================================================================
-GROQ_API_KEY  = os.environ.get("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", "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")
-META_TOKEN    = os.environ.get("EAAMdWe4twaYBQ3U4tS93P5bKKcaIl64fin7rHm2yeIQohWjsuy1XvlS6JGHTCvkIOpJshEz2MimdLYyRzRlhh2APPvQYGUXZBATSyRy3ioXfAL1ZCZAyDA4i0w8EGFBq3fkeKrsZBDhheXP2ZClReIObpDkaPxaI18JLZCu9xV186uihRuCMmzim2NK75e10S8XgKev4zLkN0bZAbp5BwlXIVkFvST4vKDqwArJ", "EAAMdWe4twaYBQ3U4tS93P5bKKcaIl64fin7rHm2yeIQohWjsuy1XvlS6JGHTCvkIOpJshEz2MimdLYyRzRlhh2APPvQYGUXZBATSyRy3ioXfAL1ZCZAyDA4i0w8EGFBq3fkeKrsZBDhheXP2ZClReIObpDkaPxaI18JLZCu9xV186uihRuCMmzim2NK75e10S8XgKev4zLkN0bZAbp5BwlXIVkFvST4vKDqwArJ")
-META_PHONE_ID = os.environ.get("961239650414311", "961239650414311")
-VERIFY_TOKEN  = os.environ.get("vinay123", "vinay123")
+GROQ_API_KEY  = os.environ.get("GROQ_API_KEY", "")
+META_TOKEN    = os.environ.get("META_TOKEN", "")
+META_PHONE_ID = os.environ.get("META_PHONE_ID", "")
+VERIFY_TOKEN  = os.environ.get("VERIFY_TOKEN", "")
 # ================================================================
 # TIMETABLE DATA
 # ================================================================

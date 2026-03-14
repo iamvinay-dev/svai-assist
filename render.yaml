@@ -7,10 +7,10 @@ services:
     plan: free
     envVars:
       - key: GROQ_API_KEY
-        sync: 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
+        sync: false
       - key: META_TOKEN
-        sync: EAAMdWe4twaYBQ3U4tS93P5bKKcaIl64fin7rHm2yeIQohWjsuy1XvlS6JGHTCvkIOpJshEz2MimdLYyRzRlhh2APPvQYGUXZBATSyRy3ioXfAL1ZCZAyDA4i0w8EGFBq3fkeKrsZBDhheXP2ZClReIObpDkaPxaI18JLZCu9xV186uihRuCMmzim2NK75e10S8XgKev4zLkN0bZAbp5BwlXIVkFvST4vKDqwArJ
+        sync: false
       - key: META_PHONE_ID
-        sync: 961239650414311
+        sync: false
       - key: VERIFY_TOKEN
-        value: vinay123
+        value: false
