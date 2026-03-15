@@ -700,9 +700,7 @@ quiz_sessions = {}
 # ================================================================
 # HELPER FUNCTIONS
 # ================================================================
-
 def send_whatsapp(to, message):
-    """Send WhatsApp message via Meta Cloud API"""
     if not META_TOKEN or not META_PHONE_ID:
         print("ERROR: META_TOKEN or META_PHONE_ID not set!")
         return
@@ -724,7 +722,8 @@ def send_whatsapp(to, message):
                 "text": {"body": part}
             }
             try:
-                requests.post(url, headers=headers, json=data, timeout=10)
+                r = requests.post(url, headers=headers, json=data, timeout=10)
+                print(f"Send response: {r.status_code} — {r.text}")
             except Exception as e:
                 print(f"Send error: {e}")
     else:
@@ -735,10 +734,10 @@ def send_whatsapp(to, message):
             "text": {"body": message}
         }
         try:
-            requests.post(url, headers=headers, json=data, timeout=10)
+            r = requests.post(url, headers=headers, json=data, timeout=10)
+            print(f"Send response: {r.status_code} — {r.text}")
         except Exception as e:
             print(f"Send error: {e}")
-
 
 def call_groq(user_message):
     """Call Groq API with SVAI system prompt"""
