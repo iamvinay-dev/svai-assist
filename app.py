@@ -11,8 +11,8 @@ app = Flask(__name__)
 # ENVIRONMENT VARIABLES
 # ================================================================
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
-META_TOKEN    = os.environ.get("", "")
-META_PHONE_ID = os.environ.get("", "")
+META_TOKEN    = os.environ.get("META_TOKEN", "")
+META_PHONE_ID = os.environ.get("META_PHONE_ID", "")
 VERIFY_TOKEN  = os.environ.get("VERIFY_TOKEN", "vinay123")
 # ================================================================
 # TIMETABLE DATA
